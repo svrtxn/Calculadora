@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css" />
+  <title>Calculadora</title>
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Calculadora</h1>
+    <div class="calculadora">
+      <input type="text" id="pantalla" readonly />
+      <div class="botones">
+        <button onclick="limpiarPantalla()" class="limpiarPantalla">C</button>
+        <button onclick="agregarPantalla('%')" class="operador">%</button>
+        <button onclick="agregarPantalla('/')" class="operador">/</button>
+        <button class="icon">
+            <a href="https://github.com/svrtxn" target="_blank">          
+                <img src="svrtencitoazul.png" alt="Icono" />
+            </a>
+        </button>
+
+        <button onclick="agregarPantalla('7')" class="number">7</button>
+        <button onclick="agregarPantalla('8')" class="number">8</button>
+        <button onclick="agregarPantalla('9')" class="number">9</button>
+        <button onclick="agregarPantalla('*')" class="operador">*</button>
+
+        <button onclick="agregarPantalla('4')" class="number">4</button>
+        <button onclick="agregarPantalla('5')" class="number">5</button>
+        <button onclick="agregarPantalla('6')" class="number">6</button>
+        <button onclick="agregarPantalla('-')" class="operador">-</button>
+
+        <button onclick="agregarPantalla('1')" class="number">1</button>
+        <button onclick="agregarPantalla('2')" class="number">2</button>
+        <button onclick="agregarPantalla('3')" class="number">3</button>
+        <button onclick="agregarPantalla('+')" class="operador">+</button>
+
+        <button onclick="agregarPantalla('0')" class="number" id="zero">0</button>
+        <button onclick="agregarPantalla('.')" class="punto">.</button>
+        <button onclick="calcularResultado()" class="resultado">=</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>Creado por Steffi Ryser</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
